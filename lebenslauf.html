@@ -14,8 +14,9 @@
 
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
         rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <!-- Bootstrap CSS Ende -->
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Meine CSS Sheets -->
     <link rel="stylesheet" type="text/css" href="./lebenslaufStyle.css">
 </head>
 
@@ -127,57 +128,77 @@
 
         <hr />
         <!-- Sonstiges -->
-        <section>
-            <div class="text-center">
-                <h3>Kentnisse und Interessen</h3>
-                <ul class="text-left kentnisse">
-                    <li>
-                        Sprachen:
-                        <ul>
-                            <li>Deutsch (Muttersprache)</li>
-                            <li>Englisch (Verhandlungssicher)</li>
-                            <li>Norwegisch (Grundkentnisse)</li>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <h3>Kentnisse und Interessen</h3>
+                        <ul class="text-left">
+                            <li>
+                                Sprachen:
+                                <ul>
+                                    <li>Deutsch (Muttersprache)</li>
+                                    <li>Englisch (Verhandlungssicher)</li>
+                                    <li>Norwegisch (Grundkentnisse)</li>
+                                </ul>
+                            </li>
+                            <li>Sport:
+                                <ul>
+                                    <li>Tennis</li>
+                                    <li>Badminton</li>
+                                </ul>
+                            </li>
+                            <li>IT Kentnisse:
+                                <ul>
+                                    <li>MS Office Programme</li>
+                                    <li>Html, CSS, Javascript, PHP, (Ruby)</li>
+                                    <li>React, Node, Laravel, (Rails)</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>Sport:
-                        <ul>
-                            <li>Tennis</li>
-                            <li>Badminton</li>
-                        </ul>
-                    </li>
-                    <li>IT Kentnisse:
-                        <ul>
-                            <li>MS Office Programme</li>
-                            <li>Html, CSS, Javascript, PHP, (Ruby)</li>
-                            <li>React, Node, Laravel, (Rails)</li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="text-center">Kontaktformular:</h3>
+                    <form class="">
+                        <div class="form-group">
+                            <label for="emailInput">Ihre Email Adresse:</label>
+                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                                placeholder="Email Adresse">
+                            <br />
+                            <small id="emailHelp" class="form-text text-muted">Deine Email wird nicht mit Dritten
+                                geteilt.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nachrichtFeld">Ihre Nachricht:</label>
+                            <textarea class="form-control" id="nachrichtFeld" placeholder="Nachricht"></textarea>
+                        </div>
+                        <button type="submit" class="submitButton btn btn-primary mt-md-2">Abschicken</button>
+                    </form>
+                </div>
             </div>
-        </section>
 
-        <hr />
-        <!-- Kontaktformular -->
-        <section>
-            <h3 class="text-center">Kontaktformular:</h3>
-            <form class="form">
-                <div class="form-group">
-                    <label for="emailInput">Email Adresse</label>
-                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
-                        placeholder="Email Adresse">
-                    <br />
-                    <small id="emailHelp" class="form-text text-muted">Deine Email wird nicht mit Dritten
-                        geteilt.</small>
-                </div>
-                <div class="form-group">
-                    <label for="nachrichtFeld">Nachricht</label>
-                    <textarea class="form-control" id="nachrichtFeld" placeholder="Nachricht"></textarea>
-                </div>
-                <button type="submit" class="submitButton btn btn-primary mt-md-2">Abschicken</button>
-            </form>
+
         </section>
 
     </article>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center">
+        <div class="container p-4">
+            <section class="mb-4">
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/MatthiasvsGitHub/"
+                    role="button">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/matthias-von-schmettow/" role="button">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+            </section>
+        </div>
+    </footer>
 
 </body>
 

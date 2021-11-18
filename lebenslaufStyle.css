@@ -3,8 +3,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;  
-    background-attachment: fixed !important;
+    background-size: 400% 100%;
 }
 
 .profilePic {
@@ -32,9 +31,8 @@ h2 {
     padding-top: 0.4em;
 }
 
-.form {
-    width: 30vw;
-    margin: 0px auto;
+.submitButton:hover {
+    transform: scale(1.3);
 }
 
 @keyframes rainbow_animation {
