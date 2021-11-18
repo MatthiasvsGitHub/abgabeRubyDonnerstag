@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;  
+    background-attachment: fixed !important;
+}
+
+.profilePic {
+    height: 15em;
+    margin-left: 10vw;
+    border-radius: 15em;
+}
+
+.lebenslauf {
+    background: rgb(180, 180, 180);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1em auto;
+    padding-bottom: 15em;
+    border: 0.3em solid black;
+    border-radius: 1em;
+}
+
+.kentnisse {
+    margin-left: 35vw;
+}
+
+h1,
+h2 {
+    text-align: center;
+    padding-top: 0.4em;
+}
+
+.form {
+    width: 30vw;
+    margin: 0px auto;
+}
+
+@keyframes rainbow_animation {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
